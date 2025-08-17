@@ -163,7 +163,6 @@
 }
 
 .cover__title {
-  width: 100%;
   color: #fff;
   font-family: "Raleway";
   font-weight: 700;
@@ -311,7 +310,6 @@
 .about {
   display: grid;
   grid-template-columns: var(--lot-card-width) 1fr;
-  column-gap: 40px;
   align-items: start;
   padding: 80px 0;
   column-gap: 49px;
@@ -345,7 +343,6 @@
 
 .about__column--right {
   padding-top: 95.9px;
-
   display: flex;
   flex-direction: column;
 }
@@ -387,7 +384,6 @@
 
 .address {
   font-style: normal;
-  line-height: 24px;
 }
 
 .footer__address {
