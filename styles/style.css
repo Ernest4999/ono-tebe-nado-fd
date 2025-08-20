@@ -88,19 +88,36 @@
 }
 
 .cover{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background: url("../images/cover.jpg") center top / cover no-repeat;
-  min-height: 560px;
-  max-height: 757px;
-  box-sizing: border-box;
-  overflow: hidden;
-  position: relative;
-  padding: 0px 50px 0px;
+   position: relative;
+  padding: 293px 50px 40px;
   background-image: url(../images/cover.jpg);
   background-position: center;
   background-size: cover;
+}
+
+
+.cover::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  z-index: 0;
+}
+
+
+.cover > *{ position: relative; z-index: 1; }
+
+.title{
+
+}
+
+.cover__title{
+  text-align: left;
+  width: 100%;
+  color: #fff;
+  font: 700 100px/1.1 'Raleway', sans-serif;
+  text-transform: uppercase;
+  padding-top: auto;
 }
 
 .overlay {
@@ -110,65 +127,49 @@
   z-index: 0;
 }
 
-.description {
-  margin-bottom: auto;
-  left: 0;
-  right: 0;
+.description{
+    margin-top: auto;
   display: flex;
-  align-items: left;
   justify-content: space-between;
-  padding: 285px 0px 70px;
-  gap: 2px;
+  align-items: center;
+  gap: 24px;
+
+  margin-left: -38px;
+  padding-left: 10px;
 }
 
-.description p {
-  position: relative;
-  margin: 0px 0 40px;
+.description p{
+  margin: 27px;
   color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 1;
+  font: 400 22px/1 'Raleway', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0;
-  word-spacing: 1.17rem;
   white-space: nowrap;
+  letter-spacing: 0;
+  word-spacing: 1.2rem;
+
 }
 
-.description__btn {
-  display: block;
+
+.description__btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   min-width: 256px;
-  min-height: 48px;
-  margin-bottom: 18px;
-  padding: 0px 32px;
+
+  padding: 10px 32px;
+  box-sizing: border-box;
+
   background: transparent;
   color: #fff;
   border: 2px solid #fff;
   text-transform: uppercase;
-  line-height: 1;
-  cursor: pointer;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 22px;
-  letter-spacing: 0%;
+  font: 500 22px/1 'Raleway', sans-serif;
+  letter-spacing: 0;
   text-align: center;
-  z-index: 1;
-  transform: translateY(-12px);
 }
 
-.cover__title {
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 100px;
-  text-transform: uppercase;
-  z-index: 1;
-  position: relative;
-  width: 1000px;
-  left: 0px;
-  top: 165px;
-}
+
 
 .accent-span {
   letter-spacing: 0.31em;
@@ -177,7 +178,7 @@
 
 .text-center {
   text-align: center;
-  margin-top: 18px;
+  margin-top: 0px;
   margin-left: 25px;
   letter-spacing: 0.29em;
 }
