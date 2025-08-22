@@ -277,14 +277,6 @@
   z-index: 1;
 }
 
-.lots__card-title {
-  margin: 0 0 16px;
-}
-.lots__card-text {
-  margin-top: auto;
-  margin-bottom: 0;
-}
-
 .lots__more-link {
   display: inline-flex;
   align-items: center;
